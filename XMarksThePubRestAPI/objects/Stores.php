@@ -36,12 +36,10 @@ class Store
         $query = "SELECT
                 stores.s_name, stores.s_address, stores.s_latitude, stores.s_longitude,stores.s_type, openinghours.oh_day, openinghours.oh_oh, openinghours.oh_ch
             FROM
-                " . $this->table_name . " p
+                " . $this->table_name . " 
                 INNER JOIN
                     openinghours
                         ON stores.s_id=openinghours.s_oh_id
-            ORDER BY
-                p.created DESC";
 
 
         // prepare query statement
