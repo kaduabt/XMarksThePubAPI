@@ -39,7 +39,7 @@ class Store
                 " . $this->table_name . " 
                 INNER JOIN
                     openinghours
-                        ON stores.s_id=openinghours.s_oh_id"
+                        ON stores.s_id=openinghours.s_oh_id";
 
 
         // prepare query statement
